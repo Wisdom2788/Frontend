@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #7748F8;
+    --primary-light: #9775fa;
+    --dark: #212529;
+    --light: #f8f9fa;
+    --gray: #868e96;
+    --danger: #fa5252;
+    --success: #40c057;
+    --border: #e9eeef;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f1f3f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20x;
+    color: var(--dark);
+}
+
+.main-app {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.9);
+}
+
+.header {
+    background-color: var(--primary);
+    color: white;
+    padding: 20px 25px
+}
+
+.header h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.header p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.add-task {
+    padding: 20px 25px;
+    display: flex;
+    gap: 10px;
+    background-color: var(--light);
+    border-bottom: 1px solid var(--border);
+}
+
+.add-task input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #dee2e6;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.add-task input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba ();
+}
+
+.add-task-button {
+    background-color: var(--primary);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+}
+
+.add-task-button:hover {
+    background-color: var(--primary-light);
+}
+
+.filters {
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid var (--border);
+    padding: 10px 25px;
+}
+
+.filter {
+    padding: 5px 3px;
+    cursor: pointer;
+    color: var (--gray);
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+.filter:hover {
+    color: var(--primary);
+}
+.filter.active {
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+    font-weight: 600;
+}
+
+.Task-Container {
+   padding: 15px 0;
+   max-height: 300px;
+   overflow-y: auto;
+}
+
+
